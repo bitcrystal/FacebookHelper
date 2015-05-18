@@ -1,0 +1,13 @@
+user_pref("extensions.autoDisableScopes", 14);
+user_pref("signon.rememberSignons", true);
+user_pref("signon.importedFromSqlite", true);
+user_pref("services.sync.prefs.sync.signon.rememberSignons", true);
+user_pref("security.ask_for_password", "0");
+user_pref("plugin.importedState", true);
+user_pref("browser.download.importedFromSqlite", true);
+user_pref("network.proxy.type", 0);
+user_pref("network.automatic-ntlm-auth.allow-non-fqdn", true);
+user_pref("network.automatic-ntlm-auth.trusted-uris", "https://facebook.com");
+user_pref("signon.autologin.proxy", true);
+user_pref("signon.autofillForms", true);
+user_pref("signon.storeWhenAutocompleteOff", true);

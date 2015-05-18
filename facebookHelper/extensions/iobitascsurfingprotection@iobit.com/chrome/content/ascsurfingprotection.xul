@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="chrome://ascsurfingprotection/content/popbox.css"?>
+
+<overlay id="ascsurfingprotection-overlay"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+  
+  <script type="application/x-javascript" src="ascsurfingprotection.js" />
+  <script type="application/x-javascript" src="uimgr.js" />
+  <script type="application/x-javascript" src="urlbaricon.js" />
+  <script type="application/x-javascript" src="searchresultmgr.js" />
+  <script type="application/x-javascript" src="protectpage.js" />
+  <script type="application/x-javascript" src="languagemgr.js" />
+  <script type="application/x-javascript" src="imagemgr.js" />
+
+  <hbox id="urlbar-icons">
+      <image id="urlsafeflag-icon" class="urlbar-icon" insertbefore="star-button" onclick="UrlBarIcon.locationBarIconMouseUp();"
+             context=""/>
+  </hbox>
+
+  <popupset id="mainPopupSet">
+    <panel id="urlsafeflag-icon-popup">
+      <vbox id="urlsafeflag-icon-popup-box">
+        <html:style id="popstyle">
+        </html:style>
+        <html:div id="popbox" class="background">
+          <html:div class="head">
+            <html:a href="#" class="closebtn" onclick="document.getElementById('urlsafeflag-icon-popup').hidden = true;"></html:a>
+          </html:div>
+
+          <html:div class="mbody">
+            <html:dl class="safe">
+              <html:dt>
+                <html:img id="tipImg" src=""/>
+              </html:dt>
+              <html:dd class="message">
+                <html:span id="desc" class="title"></html:span>
+              </html:dd>
+              <html:dd>
+                <html:a id='btnOk' href="#" class="boxbtn_ok" onclick="document.getElementById('urlsafeflag-icon-popup').hidden = true;">OK</html:a>
+              </html:dd>
+            </html:dl>
+            
+            <html:ul class="bottom_info" id="detail_URL">
+              <html:li style="width:214px;">
+                <html:span id="advisorytext">Advisory provided by </html:span>
+                <html:a style="color:#666; text-decoration:underline; cursor:pointer;" href="#" onclick="document.getElementById('urlsafeflag-icon-popup').hidden = true;UrlBarIcon.openGoogleDbUrl();">Google</html:a>
+                 &amp; IObit
+              </html:li>
+              <html:li class="detai_info">
+                <html:p id="detailstext">More details</html:p>
+                <html:span>
+                  <html:a href="#" onclick="document.getElementById('urlsafeflag-icon-popup').hidden = true;UrlBarIcon.openAntiPhishingUrl();">Anti-phishing</html:a>
+                  <html:br/>
+                  <html:a href="#" onclick="document.getElementById('urlsafeflag-icon-popup').hidden = true;UrlBarIcon.openBadwareUrl();">Adware</html:a>
+                </html:span>
+              </html:li>
+            </html:ul>
+            
+          </html:div>
+        </html:div>
+      </vbox>
+    </panel>
+  </popupset>
+  
+</overlay>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+  
+  	<em:type>2</em:type>
+    <em:id>iobitascsurfingprotection@iobit.com</em:id>
+    <em:name>Advanced SystemCare Surfing Protection</em:name>
+    <em:version>2.0</em:version>
+    <em:description>Protect your computer away from malicious website attack.</em:description>
+    <em:creator>IObit</em:creator>
+    <em:homepageURL>http://www.iobit.com/</em:homepageURL>
+
+	
+    <!-- Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>4.0.0</em:minVersion>
+        <em:maxVersion>*.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+  </Description>
+
+</RDF>

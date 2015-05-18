@@ -1,0 +1,14 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+<ShortName>Google</ShortName>
+<Description>Google Search</Description>
+<InputEncoding>ISO-8859-1</InputEncoding>
+<Image height="16" width="16" type="image/x-icon">http://www.google.com/favicon.ico</Image>
+<Url type="text/html" method="GET" template="http://www.google.com/search">
+<Param name="utm_source" value="b"/>
+<Param name="utm_medium" value=""/>
+<Param name="from" value=""/>
+<Param name="uid" value=""/>
+<Param name="q" value="{searchTerms}"/>
+</Url>
+<SearchForm>http://www.google.com/search</SearchForm>
+</SearchPlugin>

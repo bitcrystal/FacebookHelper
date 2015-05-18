@@ -1,0 +1,1 @@
+pref("extensions.{5556F97E-11A5-46b0-9082-32AD74AAA920}.description", "chrome://autoformer/locale/autoformer.properties");
